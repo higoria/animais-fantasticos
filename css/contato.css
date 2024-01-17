@@ -1,0 +1,88 @@
+.contato-conteiner {
+  grid-column: 2 / 4;
+  display: grid;
+  grid-template-columns: 90px 300px 1fr;
+  gap: 30px;
+  width: 100%;
+}
+
+.contato-conteiner h1 {
+  font-size: 6rem;
+  font-family: "Playfair Display SC", Georgia;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.img-mapa {
+  max-width: max-content;
+  margin-top: 110px;
+}
+.img-mapa img {
+  width: 320px;
+  overflow: clip;
+  border: 1px solid #ccc;
+  object-fit: cover;
+}
+.lista-contato {
+  max-width: max-content;
+  grid-column: 3;
+  margin-top: 103px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.4rem;
+  font-family: Helvetica, Arial;
+}
+
+.lista-contato li::before {
+  content: "";
+  background-color: #fb5;
+  height: 10px;
+  width: 15px;
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
+
+.bitcoin {
+  background-color: green;
+  padding: 5px;
+  border-radius: 6px;
+}
+@media (max-width: 576px) {
+  .contato-conteiner {
+    grid-column: 1 / -2;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 100%;
+  }
+  .contato-conteiner h1 {
+    font-size: 3rem;
+    font-family: "Playfair Display SC", Georgia;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-left: 20px;
+  }
+  .img-mapa {
+    margin-top: 0px;
+    grid-column: 1 / -2;
+    margin-left: 20px;
+  }
+  .img-mapa img {
+    width: 320px;
+    overflow: clip;
+    border: 1px solid #ccc;
+    object-fit: cover;
+  }
+  .lista-contato {
+    max-width: max-content;
+    grid-column: 1;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.4rem;
+    font-family: Helvetica, Arial;
+  }
+}

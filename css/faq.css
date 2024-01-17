@@ -1,0 +1,75 @@
+.faq-conteiner {
+  grid-column: 2 / 4;
+  margin-bottom: 4rem;
+}
+
+.faq-conteiner h1 {
+  font-family: "Playfair Display SC", serif;
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.faq-lista {
+  max-width: 76ch;
+}
+
+.faq-lista dt {
+  font-family: "IBM Plex Mono", monospace;
+  color: #ee5544;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+.faq-lista dt::before {
+  content: "";
+  background-color: #fb5;
+  height: 10px;
+  width: 30px;
+}
+
+.faq-lista dd {
+  font-family: Helvetica, Arial;
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+  margin-left: 40px;
+}
+@media (max-width: 576px) {
+  .faq-conteiner h1 {
+    font-family: "Playfair Display SC", serif;
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    margin-left: 20px;
+  }
+  .faq-lista {
+    max-width: 50ch;
+  }
+  .faq-lista dt {
+    font-family: "IBM Plex Mono", monospace;
+    color: #ee5544;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 900;
+    margin-bottom: 5px;
+  }
+  .faq-lista dt::before {
+    content: "";
+    background-color: #fb5;
+    height: 10px;
+    width: 20px;
+    margin-left: 20px;
+  }
+
+  .faq-lista dd {
+    font-family: Helvetica, Arial;
+    font-size: 1rem;
+    margin-bottom: 1.3rem;
+    margin-left: 40px;
+  }
+}
