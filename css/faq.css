@@ -73,3 +73,10 @@
     margin-left: 40px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .faq-conteiner {
+    grid-column: 3 / 4;
+    margin-bottom: 4rem;
+  }
+}
