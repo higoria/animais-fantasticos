@@ -40,6 +40,31 @@
     color: #222;
     font-weight: 900;
     font-family: "IBM Plex Mono", monospace;
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 691.8px) {
+  .nav-conteiner {
+    display: flex;
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #fb5;
+  }
+
+  .lista-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 1.875rem;
+    padding-left: 80px;
+  }
+
+  .lista-conteiner a {
+    display: block;
+    color: #222;
+    font-weight: 900;
+    font-family: "IBM Plex Mono", monospace;
     font-size: 1.2rem;
   }
 }

@@ -80,3 +80,17 @@
     margin-bottom: 4rem;
   }
 }
+@media (min-width: 576px) and (max-width: 691.8px) {
+  .faq-conteiner h1 {
+    font-family: "Playfair Display SC", serif;
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    margin-left: 30px;
+  }
+
+  .faq-lista {
+    max-width: 76ch;
+    margin-left: 60px;
+  }
+}
