@@ -61,6 +61,10 @@
     font-family: "Playfair Display SC", Georgia;
     font-weight: normal;
     margin-bottom: 0px;
+    font-size: 3rem;
+    font-family: "Playfair Display SC", Georgia;
+    font-weight: normal;
+    margin-bottom: 0px;
     margin-left: 20px;
   }
   .img-mapa {
@@ -88,11 +92,14 @@
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .contato-conteiner {
-    grid-column: 3 / 4;
+    grid-column: 2 / 4;
     display: grid;
     grid-template-columns: 90px 300px 1fr;
     gap: 30px;
     width: 100%;
+  }
+  .contato-conteiner h1 {
+    margin-left: 70px;
   }
 }
 @media (min-width: 576px) and (max-width: 691.8px) {

@@ -16,20 +16,23 @@
 </head>
 
 <body>
+  <img class="logo" src="img/pet 3d.svg" alt="">
   <nav class="nav-conteiner">
+
     <ul class="lista-conteiner">
       <li><a href="#animais">ANIMAIS</a></li>
-      <li><a href="#sobre">SOBRE</a></li>
+      <li><a class="botaoTemaEscuro" href="#sobre">TEMA ESCURO</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contato">CONTATO</a></li>
       <li><a href="/">LOGIN ►</a></li>
+      <li><a href="/">GALERIA</a></li>
     </ul>
   </nav>
 
-  <section class="grid-section animais" id="animais">
+  <section class="grid-section animais js-scroll" id="animais">
     <h1 class="titulo-h1">ANIMAIS FANTÁSTICOS</h1>
 
-    <ul class="galeria-imgs">
+    <ul class="galeria-imgs js-tabmenu">
       <li><img src="img/imagem1.jpg" alt=""></li>
       <li><img src="img/imagem2.jpg" alt=""></li>
       <li><img src="img/imagem3.jpg" alt=""></li>
@@ -38,8 +41,8 @@
       <li><img src="img/imagem6.jpg" alt=""></li>
     </ul>
 
-    <div class="animais-descriçao">
-      <section class="animal-raposa">
+    <div class="animais-descriçao js-tabconteudo">
+      <section class="animal-raposa ativo">
         <h2>RAPOSA</h2>
         <p><strong>As raposas são animais mamíferos e onívoros</strong> pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
         <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
@@ -84,9 +87,9 @@
     </div>
   </section>
 
-  <section class="faq-conteiner" id="faq">
+  <section class="faq-conteiner js-scroll" id="faq">
     <h1>FAQ</h1>
-    <dl class="faq-lista">
+    <dl class="faq-lista js-accordion">
 
       <dt>Qual a idade dos animais?</dt>
       <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
@@ -102,7 +105,7 @@
     </dl>
   </section>
 
-  <section class="contato-conteiner" id="contato">
+  <section class="contato-conteiner js-scroll" id="contato">
     <h1>CONTATO</h1>
 
     <div class="img-mapa">
@@ -113,7 +116,7 @@
       <li>contato@rafaasimi.com</li>
       <li>+55 (19) 9999-9999</li>
       <li>Rua do Conde, Nº 21</li>
-      <li>Araras - SP/li>
+      <li>Araras - SP
       <li>Seg à Sex das 8 às 18</li>
       <li>Doe <span class="bitcoin ">0.0047</span> Bitcoin para nos ajudar</li>
     </ul>

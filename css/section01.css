@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 90px 300px 1fr;
   gap: 20px;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .grid-section .titulo-h1 {
@@ -180,13 +180,33 @@
     width: 100%;
   }
   .grid-section .titulo-h1 {
-    font-size: 5.4rem;
+    font-size: 5rem;
     font-family: "Playfair Display SC", serif;
-    margin-left: 30px;
+    margin-left: 20px;
   }
   .animais-descriçao {
     grid-column: 1 / -1;
     margin-left: 0px;
     max-width: 80ch;
+  }
+}
+
+.js-tabconteudo section {
+  display: none;
+}
+
+.js-tabconteudo section.ativo {
+  display: block;
+  animation: show 0.9s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 100px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }

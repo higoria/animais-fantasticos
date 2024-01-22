@@ -1,0 +1,38 @@
+strong {
+  background-color: #90ee90;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+body.temaescuro.temaclaro {
+  background-color: #222;
+  color: #fff;
+  transition: 0.5s;
+}
+body.temaescuro {
+  background-color: #fff;
+  color: #222;
+  transition: 0.5s;
+}
+
+span {
+  background-color: #222;
+  color: #fff;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.4s;
+}
+.js-scroll.ativoScroll {
+  opacity: 1;
+  transform: translate3d(0px, 0, 0);
+}
+@media (max-width: 1200px) {
+  .logo {
+    display: none;
+  }
+}
