@@ -22,6 +22,10 @@ body {
   background: #f2f6f2;
   color: #222;
   -webkit-font-smoothing: antialiased;
-  display: grid;
-  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+}
+html {
+  scroll-behavior: smooth;
+}
+:target {
+  scroll-margin-top: 0.8em;
 }

@@ -13,120 +13,150 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <img class="logo" src="img/pet 3d.svg" alt="">
-  <nav class="nav-conteiner">
+  <div class="grid-conteiner">
 
-    <ul class="lista-conteiner">
-      <li><a href="#animais">ANIMAIS</a></li>
-      <li><a class="botaoTemaEscuro" href="#sobre">TEMA ESCURO</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contato">CONTATO</a></li>
-      <li><a href="/">LOGIN ►</a></li>
-      <li><a href="/">GALERIA</a></li>
-    </ul>
-  </nav>
+    <img class="logo" src="img/pet 3d.svg" alt="">
 
-  <section class="grid-section animais js-scroll" id="animais">
-    <h1 class="titulo-h1">ANIMAIS FANTÁSTICOS</h1>
+    <nav class="nav-conteiner">
+      <button data-menu="button">menu</button>
+      <ul class="lista-conteiner" data-menu="lista-ul" id="menu">
+        <li><a href="#animais">ANIMAIS</a></li>
+        <li><a class="botaoTemaEscuro" href="#sobre">TEMA ESCURO</a></li>
+        <li data-dropdown><a href="sobre.html">SOBRE</a>
+          <ul class="dropdown-menu">
+            <li><a href="empresa.html">A empresa</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="socios.html">Socios</a></li>
+            <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
+          </ul>
+        </li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">CONTATO</a></li>
+        <li><a data-modal="abrir" href="/">LOGIN ►</a></li>
+        <li><a href="/">GALERIA</a></li>
+      </ul>
+    </nav>
 
-    <ul class="galeria-imgs js-tabmenu">
-      <li><img src="img/imagem1.jpg" alt=""></li>
-      <li><img src="img/imagem2.jpg" alt=""></li>
-      <li><img src="img/imagem3.jpg" alt=""></li>
-      <li><img src="img/imagem4.jpg" alt=""></li>
-      <li><img src="img/imagem5.jpg" alt=""></li>
-      <li><img src="img/imagem6.jpg" alt=""></li>
-    </ul>
+    <section class="grid-section animais js-scroll" id="animais">
+      <h1 class="titulo-h1">ANIMAIS FANTÁSTICOS</h1>
 
-    <div class="animais-descriçao js-tabconteudo">
-      <section class="animal-raposa ativo">
-        <h2>RAPOSA</h2>
-        <p><strong>As raposas são animais mamíferos e onívoros</strong> pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-        <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
-        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-      </section>
+      <ul class="galeria-imgs js-tabmenu">
+        <li><img src="img/imagem1.jpg" alt=""></li>
+        <li><img src="img/imagem2.jpg" alt=""></li>
+        <li><img src="img/imagem3.jpg" alt=""></li>
+        <li><img src="img/imagem4.jpg" alt=""></li>
+        <li><img src="img/imagem5.jpg" alt=""></li>
+        <li><img src="img/imagem6.jpg" alt=""></li>
+      </ul>
 
-      <section class="animal-esquilo">
-        <h2>ESQUILO</h2>
-        <p>O esquilo (Sciurus vulgaris) é um mamífero pertencente à família Sciudidae e à ordem rodentia. Sua família comprende os esquilos arborícolas, terrestres, voadores e as marmotas, entre outros.</p>
-        <p>O esquilo mais comum, o europeu, possui pelagem avermelhada, cauda longa e tem pelos compridos nas orelhas.</p>
-        <p><strong>Trata-se de um animal de hábitos diurnos</strong> e se desloca com incrível agilidade pela copas das árvores, bem coma para subir ou descer pelos troncos.</p>
-      </section>
+      <div class="animais-descriçao js-tabconteudo">
+        <section class="animal-raposa ativo" data-anime="show-down">
+          <h2>RAPOSA</h2>
+          <p><strong>As raposas são animais mamíferos e onívoros</strong> pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+        </section>
 
-      <section class="animal-urso">
-        <h2>URSO</h2>
-        <p>Urso é a denominação utilizada para as espécies pertencentes à família Ursidae, uma das famílias mais estudadas e mais ameaçadas entre os animais carnívoros. Seus membros pertencem à classe Mammalia e à ordem Carnivora.</p>
-        <p>A família Ursidae apresenta espécies distribuídas em diversas regiões do planeta, como Europa, Ásia, América do Sul, América do Norte e África, habitando desde regiões de florestas a regiões polares.</p>
-        <p>A reprodução do panda-gigante é um processo complicado, pois o período reprodutivo da fêmea ocorre apenas <strong>uma vez ao ano e dura entre 24 e 72 horas</strong>.</p>
-      </section>
+        <section class="animal-esquilo" data-anime="show-right">
+          <h2>ESQUILO</h2>
+          <p>O esquilo (Sciurus vulgaris) é um mamífero pertencente à família Sciudidae e à ordem rodentia. Sua família comprende os esquilos arborícolas, terrestres, voadores e as marmotas, entre outros.</p>
+          <p>O esquilo mais comum, o europeu, possui pelagem avermelhada, cauda longa e tem pelos compridos nas orelhas.</p>
+          <p><strong>Trata-se de um animal de hábitos diurnos</strong> e se desloca com incrível agilidade pela copas das árvores, bem coma para subir ou descer pelos troncos.</p>
+        </section>
 
-      <section class="animal-lobo">
-        <h2>LOBO</h2>
-        <p>O lobo é uma espécie de mamífero que faz parte da família Canidae, a mesma dos cachorros. Geralmente, o termo lobo é usado para se referir à espécie Canis lupus</p>
-        <p>Animal terrestre que ocupa uma grande variedade de hábitats, o lobo ocorre na tundra, em regiões de floresta, pradarias e até mesmo em paisagens áridas. Anteriormente, a espécie era encontrada na maior parte do hemisfério norte</p>
-        <p> <strong>Lobo é um nome utilizado, geralmente, para se referir ao lobo-cinzento</strong></p>
-      </section>
+        <section class="animal-urso" data-anime="show-down">
+          <h2>URSO</h2>
+          <p>Urso é a denominação utilizada para as espécies pertencentes à família Ursidae, uma das famílias mais estudadas e mais ameaçadas entre os animais carnívoros. Seus membros pertencem à classe Mammalia e à ordem Carnivora.</p>
+          <p>A família Ursidae apresenta espécies distribuídas em diversas regiões do planeta, como Europa, Ásia, América do Sul, América do Norte e África, habitando desde regiões de florestas a regiões polares.</p>
+          <p>A reprodução do panda-gigante é um processo complicado, pois o período reprodutivo da fêmea ocorre apenas <strong>uma vez ao ano e dura entre 24 e 72 horas</strong>.</p>
+        </section>
 
-      <section class="animal-macaco">
-        <h2>MACACO</h2>
-        <p><strong>Macaco é um termo utilizado para referir-se a algumas espécies de primatas.</strong> Nem todos os primatas são macacos, mas todos os macacos são primatas.</p>
-        <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
-        <p>Por ocasião do Dia Mundial dos Macacos, comemorado todo dia 14 de dezembro e que tem como objetivo ajudar na preservação das espécies, National Geographic investiga algumas características marcantes do macaco-prego, tido como um dos mais inteligentes da natureza.</p>
-      </section>
+        <section class="animal-lobo" data-anime="show-right">
+          <h2>LOBO</h2>
+          <p>O lobo é uma espécie de mamífero que faz parte da família Canidae, a mesma dos cachorros. Geralmente, o termo lobo é usado para se referir à espécie Canis lupus</p>
+          <p>Animal terrestre que ocupa uma grande variedade de hábitats, o lobo ocorre na tundra, em regiões de floresta, pradarias e até mesmo em paisagens áridas. Anteriormente, a espécie era encontrada na maior parte do hemisfério norte</p>
+          <p> <strong>Lobo é um nome utilizado, geralmente, para se referir ao lobo-cinzento</strong></p>
+        </section>
 
-      <section class="animal-leao">
-        <h2>LEÃO</h2>
-        <p>Eles medem em média dois metros de comprimento e atingem o peso de 270 quilos, sendo considerados o <strong>segundo maior felino do mundo</strong></p>
-        <p>sses animais são capazes de correr rapidamente, atingindo cerca de 80 km/h. Quando pegam sua presa, atacam principalmente o pescoço do animal, sufocando-o. Possuem mandíbulas fortes e dentes caninos com cerca de 6 cm.</p>
-        <p>O macho e a fêmea podem ser diferenciados facilmente pela presença da <strong>juba nos machos</strong></p>
-      </section>
+        <section class="animal-macaco" data-anime="show-down">
+          <h2>MACACO</h2>
+          <p><strong>Macaco é um termo utilizado para referir-se a algumas espécies de primatas.</strong> Nem todos os primatas são macacos, mas todos os macacos são primatas.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+          <p>Por ocasião do Dia Mundial dos Macacos, comemorado todo dia 14 de dezembro e que tem como objetivo ajudar na preservação das espécies, National Geographic investiga algumas características marcantes do macaco-prego, tido como um dos mais inteligentes da natureza.</p>
+        </section>
 
+        <section class="animal-leao" data-anime="show-right">
+          <h2>LEÃO</h2>
+          <p>Eles medem em média dois metros de comprimento e atingem o peso de 270 quilos, sendo considerados o <strong>segundo maior felino do mundo</strong></p>
+          <p>sses animais são capazes de correr rapidamente, atingindo cerca de 80 km/h. Quando pegam sua presa, atacam principalmente o pescoço do animal, sufocando-o. Possuem mandíbulas fortes e dentes caninos com cerca de 6 cm.</p>
+          <p>O macho e a fêmea podem ser diferenciados facilmente pela presença da <strong>juba nos machos</strong></p>
+        </section>
+
+      </div>
+    </section>
+
+    <section class="faq-conteiner js-scroll" id="faq">
+      <h1>FAQ</h1>
+      <dl class="faq-lista js-accordion">
+
+        <dt>Qual a idade dos animais?</dt>
+        <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+
+        <dt>Eles são fantásticos?</dt>
+        <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
+
+        <dt>Qual a diferença?</dt>
+        <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+
+        <dt>Como proteger?</dt>
+        <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
+      </dl>
+    </section>
+
+    <section class="contato-conteiner js-scroll" id="contato">
+      <h1>CONTATO</h1>
+
+      <div class="img-mapa" data-tooltip aria-label="higor lindo">
+        <img src="img/mapa.png" alt="">
+      </div>
+
+      <ul class="lista-contato">
+        <li>contato@rafaasimi.com</li>
+        <li>+55 (19) 9999-9999</li>
+        <li>Rua do Conde, Nº 21</li>
+        <li>Araras - SP
+        <li>Seg à Sex das 8 às 18</li>
+        <li>Doe <span class="bitcoin ">0.0047</span> Bitcoin para nos ajudar</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <h1>Animais Fantásticos © Todos os direitos reservados.</h1>
+    </footer>
+  </div>
+  <section class="modal-conteiner" data-conteiner="conteiner">
+    <div class="modal">
+      <button data-modal="fechar" class="btn-modal">X</button>
+      <h1>Login</h1>
+      <p>Digite seus dados de acesso no campo abaixo</p>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="text" for="email" id="email" required>
+
+        <label for="senha">Senha</label>
+        <input type="password" for="senha" id="senha">
+        <button type="submit">Entrar</button>
+      </form>
     </div>
   </section>
-
-  <section class="faq-conteiner js-scroll" id="faq">
-    <h1>FAQ</h1>
-    <dl class="faq-lista js-accordion">
-
-      <dt>Qual a idade dos animais?</dt>
-      <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
-
-      <dt>Eles são fantásticos?</dt>
-      <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
-
-      <dt>Qual a diferença?</dt>
-      <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
-
-      <dt>Como proteger?</dt>
-      <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
-    </dl>
-  </section>
-
-  <section class="contato-conteiner js-scroll" id="contato">
-    <h1>CONTATO</h1>
-
-    <div class="img-mapa">
-      <img src="img/mapa.png" alt="">
-    </div>
-
-    <ul class="lista-contato">
-      <li>contato@rafaasimi.com</li>
-      <li>+55 (19) 9999-9999</li>
-      <li>Rua do Conde, Nº 21</li>
-      <li>Araras - SP
-      <li>Seg à Sex das 8 às 18</li>
-      <li>Doe <span class="bitcoin ">0.0047</span> Bitcoin para nos ajudar</li>
-    </ul>
-  </section>
-
-  <footer class="footer">
-    <h1>Animais Fantásticos © Todos os direitos reservados.</h1>
-  </footer>
-
-  <script src="script.js"></script>
+  <script type="module" src="/js//script.js"></script>
 </body>
 
 </html>

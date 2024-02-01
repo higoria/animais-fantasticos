@@ -14,6 +14,10 @@ body.temaescuro {
   color: #222;
   transition: 0.5s;
 }
+.grid-conteiner {
+  display: grid;
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+}
 
 span {
   background-color: #222;
