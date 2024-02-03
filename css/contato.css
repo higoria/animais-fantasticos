@@ -55,17 +55,17 @@
     grid-template-columns: 1fr;
     gap: 10px;
     width: 100%;
+    margin-top: 60px;
   }
   .contato-conteiner h1 {
-    font-size: 3rem;
     font-family: "Playfair Display SC", Georgia;
     font-weight: normal;
     margin-bottom: 0px;
-    font-size: 3rem;
+    font-size: 5rem;
     font-family: "Playfair Display SC", Georgia;
     font-weight: normal;
-    margin-bottom: 0px;
-    margin-left: 20px;
+    margin-bottom: 10;
+    margin-left: 10px;
   }
   .img-mapa {
     margin-top: 0px;

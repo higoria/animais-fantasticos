@@ -1,0 +1,15 @@
+.horario-span {
+  background: none;
+  color: #000;
+  margin-left: 10px;
+}
+.horario-span.aberto {
+  background-color: #90ee90;
+  padding: 5px;
+  border-radius: 7px;
+}
+.horario-span.fechado {
+  background-color: #8b0000;
+  padding: 5px;
+  border-radius: 7px;
+}

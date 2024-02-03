@@ -23,3 +23,4 @@ export default function startModal() {
   botaoFechar.addEventListener("click", fecharModal);
   conteinerModal.addEventListener("click", cliqueForaDoModal);
 }
+const agr = new Date();

@@ -8,6 +8,8 @@ export default function startScrollSections() {
         sections.getBoundingClientRect().top - windowMetade;
       if (topoDasSections < 0) {
         sections.classList.add("ativoScroll");
+      } else if (sections.classList.contains("ativoScroll")) {
+        sections.classList.remove("ativoScroll");
       }
     });
   }

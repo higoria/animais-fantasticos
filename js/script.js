@@ -7,6 +7,8 @@ import startModal from ".//modal.js";
 import startToolTip from "./tooltip.js";
 import startDropdownMenu from "./dropdownmenu.js";
 import startMenuMobile from "./menuMobile.js";
+import startAnimaisNumeros from "./animaisNumeros.js";
+import startFuncionamento from "./funcionamento.js";
 
 startCrollSuave();
 startScrollSections();
@@ -17,3 +19,5 @@ startModal();
 startToolTip();
 startDropdownMenu();
 startMenuMobile();
+startAnimaisNumeros();
+startFuncionamento();
