@@ -24,3 +24,12 @@
     color: black;
   }
 }
+@media (max-width: 576px) {
+  .footer {
+    grid-column: 1 / 4;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    font-size: 0.6rem;
+    padding: 20px;
+  }
+}
