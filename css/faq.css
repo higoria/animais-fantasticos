@@ -103,7 +103,7 @@
     margin-bottom: 4rem;
   }
 }
-@media (min-width: 576px) and (max-width: 691.8px) {
+@media (min-width: 576px) and (max-width: 767.8px) {
   .faq-conteiner h1 {
     font-family: "Playfair Display SC", serif;
     font-size: 6rem;

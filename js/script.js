@@ -9,6 +9,7 @@ import startDropdownMenu from "./dropdownmenu.js";
 import startMenuMobile from "./menuMobile.js";
 import startAnimaisNumeros from "./animaisNumeros.js";
 import startFuncionamento from "./funcionamento.js";
+import startBitCoin from "./bitcoin.js";
 
 startCrollSuave();
 startScrollSections();
@@ -21,3 +22,4 @@ startDropdownMenu();
 startMenuMobile();
 startAnimaisNumeros();
 startFuncionamento();
+startBitCoin();

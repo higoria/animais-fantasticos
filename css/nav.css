@@ -38,6 +38,10 @@
   transition: 0.4s;
 }
 @media (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .logo {
     display: none;
   }

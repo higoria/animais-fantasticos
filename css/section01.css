@@ -10,7 +10,7 @@
 
 .grid-section .titulo-h1 {
   font-size: 6.3rem;
-  font-family: 'Playfair Display SC', serif;
+  font-family: "Playfair Display SC", serif;
   line-height: 1;
   margin-bottom: 1rem;
   grid-column: 1 / 4;
@@ -41,12 +41,12 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 1.6rem;
   color: #e54;
 }
 .animais h2::before {
-  content: '';
+  content: "";
   background-color: #fb5;
   height: 10px;
   width: 40px;
@@ -81,7 +81,7 @@
   }
   .grid-section .titulo-h1 {
     font-size: 3rem;
-    font-family: 'Playfair Display SC', serif;
+    font-family: "Playfair Display SC", serif;
     line-height: 1;
     margin-bottom: 1rem;
     grid-column: 1 / -2;
@@ -131,7 +131,7 @@
   }
   .grid-section .titulo-h1 {
     font-size: 6.3rem;
-    font-family: 'Playfair Display SC', serif;
+    font-family: "Playfair Display SC", serif;
     margin-left: 30px;
   }
   .animais-descriçao {
@@ -155,8 +155,8 @@
     width: 100%;
   }
   .grid-section .titulo-h1 {
-    font-size: 6.3rem;
-    font-family: 'Playfair Display SC', serif;
+    font-size: 6rem;
+    font-family: "Playfair Display SC", serif;
     margin-left: 30px;
   }
   .animais-descriçao {
@@ -181,7 +181,7 @@
   }
   .grid-section .titulo-h1 {
     font-size: 5rem;
-    font-family: 'Playfair Display SC', serif;
+    font-family: "Playfair Display SC", serif;
     margin-left: 20px;
   }
   .animais-descriçao {

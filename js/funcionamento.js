@@ -7,7 +7,6 @@ export default function startFuncionamento() {
   const dataAtual = new Date();
   const diaAtual = dataAtual.getDay();
   const horarioAtual = dataAtual.getHours();
-  console.log(diaAtual, horarioAtual);
 
   const semanaAberto = diasDaSemana.indexOf(diaAtual) !== -1;
 
