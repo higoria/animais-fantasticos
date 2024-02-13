@@ -7,7 +7,7 @@ export default function startAnimaisNumeros() {
 
       let i = 0;
       const timer = setInterval(() => {
-        i = i + incremento;
+        i += incremento;
         numeros.innerText = i;
         if (i > total) {
           clearInterval(timer);
