@@ -10,6 +10,7 @@ import startMenuMobile from "./menuMobile.js";
 import startAnimaisNumeros from "./animaisNumeros.js";
 import startFuncionamento from "./funcionamento.js";
 import startBitCoin from "./bitcoin.js";
+import SlideNav from "./slide.js";
 
 startCrollSuave();
 startScrollSections();
@@ -23,3 +24,7 @@ startMenuMobile();
 startAnimaisNumeros();
 startFuncionamento();
 startBitCoin();
+
+const slide = new SlideNav(".slide", ".slide-wrapper");
+slide.init();
+slide.addControl(".custom-controls");
