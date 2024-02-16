@@ -29,17 +29,20 @@
   font-weight: normal;
 }
 @media (max-width: 576px) {
+  .numeros {
+    margin-top: 100px;
+  }
   .numeros-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column: 1 /4;
+    grid-column: 1 /2;
     margin-top: 10px;
     gap: 30px;
-    margin-left: 20px;
+    margin-left: 0px;
   }
   .numeros h1 {
     font-family: "Playfair Display SC", serif;
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: normal;
   }
 }

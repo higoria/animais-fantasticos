@@ -61,6 +61,14 @@
   }
 }
 @media (max-width: 576px) {
+  .grid-conteiner {
+    display: grid;
+    grid-template-columns: 1fr 129px minmax(300px, 600px) 1fr;
+  }
+  .faq-conteiner {
+    grid-column: 2 / 4;
+    width: 92%;
+  }
   .faq-conteiner h1 {
     font-family: "Playfair Display SC", serif;
     font-size: 6rem;

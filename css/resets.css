@@ -22,10 +22,16 @@ body {
   background: #f2f6f2;
   color: #222;
   -webkit-font-smoothing: antialiased;
+  width: 100vw;
 }
 html {
   scroll-behavior: smooth;
 }
 :target {
   scroll-margin-top: 0.8em;
+}
+*,
+*::after,
+*::before {
+  border: 1px solid red;
 }
