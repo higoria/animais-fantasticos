@@ -67,9 +67,6 @@
 }
 
 @media (max-width: 576px) {
-  body {
-    overflow-x: hidden;
-  }
   .grid-section {
     grid-column: 2 / 3;
     width: 100%;
